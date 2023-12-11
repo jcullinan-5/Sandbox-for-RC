@@ -12,9 +12,5 @@ export const { webhook, connector } = createSlugManager({
   },
   fields: [],
   entityTypes: ["location"],
-  // Uncomment if you want to scope the slug manager to a specific filter
-  // The ids here must be the internal search ids, visible as the `selectedSavedFilterId`
-  // query parameter when viewing the filter on the entity list page, NOT the filter
-  // from the Saved Filters page.
-  // searchIds: [],
+  env: "sandbox", // add this line for sandbox accounts
 });
